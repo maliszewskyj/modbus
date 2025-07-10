@@ -1,4 +1,5 @@
-INCLUDES = 
+TCLDIR = /usr/include/tcl8.6
+INCLUDES = -I$(TCLDIR)
 CFLAGS = -g -Wall -fPIC $(INCLUDES)
 LDFLAGS = -shared -warn-once -fPIC
 OBJ = mbtest.o ModbusTCP.o TCP_util.o
